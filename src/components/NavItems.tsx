@@ -8,6 +8,7 @@ import NavItem from './NavItem';
 const NavItems = () => {
   const [activeIndex, setActiveIndex] = useState<null | number>(null);
 
+  //for peope who use keyboard, they can press espace button and the navbar will be closed that isOpen is false
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
